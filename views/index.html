@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to Glitch!</title>
+    <title>くりぬき文字</title>
     <meta name="description" content="A cool thing made with Glitch">
     <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
@@ -21,16 +21,29 @@
   <body>
     <header>
       <h1>
-        A Dream of the Future
+        <img src="/public/title.png" alt="title" title="title">
       </h1>
     </header>
 
     <main>
-      <p class="bold">Oh hi,</p>
-      <p>Tell me your hopes and dreams:</p>
+      <p class="bold">文字や文章を、背景画像にくりぬき描画したものを作成します。</p>
+      <p></p>
+      <textarea id="kurinukimoji" cols="50" maxlength="100" rows="5">test</textarea>
+      <p>背景画像を選択してください。</p>
+      <form>
+      <input type="radio" name="ita"><img src="/public/ita1.png" alt="ita1" title="ita1"><br>
+      <input type="radio" name="ita"><img src="/public/ita2.png" alt="ita2" title="ita2"><br>
+      <input type="radio" name="ita"><img src="/public/ita3.png" alt="ita3" title="ita3"><br>
+      <input type="radio" name="ita"><img src="/public/ita4.png" alt="ita4" title="ita4"><br>
+    </form>
+
+      <p>表示サンプル</p>
+      <canvas id="canvas"></canvas>
       <form>
         <input type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit">Submit</button>
+        <button type="submit">PINGで保存</button>
+        <a onclick="downloadImg()" id="download" class="btn btn-primary">画像ダウンロード</a>
+
       </form>
       <section class="dreams">
         <ul id="dreams">
@@ -48,7 +61,7 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
-    <script src="/public/client.js"></script>
+    <script defer src="/public/client.js"></script>
 
   </body>
 </html>
