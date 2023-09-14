@@ -82,6 +82,32 @@ footer > a {
 }
 
 
-input[type="radio"],input[type="checkbox"]{
- vertical-align:middle;
+input[type=radio]+label:before{
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  width: 285px;
+  height: 60px;
+}
+
+input[type=radio][value="ita1"]+label:before{
+	background-image: url(/public/ita1.png);
+}
+input[type=radio][value="ita2"]+label:before{
+	background-image: url(/public/ita2.png);
+}
+input[type=radio][value="ita3"]+label:before{
+	background-image: url(/public/ita3.png);
+}
+
+input[type=radio][value="ita4"]+label:before{
+	background-image: url(/public/ita4.png);
+}
+
+input[type=radio]:checked+label::before{
+  border: 3px solid #000;
+  box-sizing: border-box;
+}
+input[type=radio]{
+  display: none;
 }
