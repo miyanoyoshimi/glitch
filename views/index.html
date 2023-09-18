@@ -28,7 +28,7 @@
     <main>
       <p class="bold">文字や文章を、背景画像にくりぬき描画したものを作成します。</p>
       <p></p>
-      <textarea id="kurinukimoji" cols="50" maxlength="100" rows="5">test</textarea>
+      <textarea id="kurinukimoji" cols="50" maxlength="10" rows="1">test</textarea>
       <p>背景画像を選択してください。</p>
       <form>
       <!-- <input type="radio" name="ita"> <img src="/public/ita1.png" alt="ita1" title="ita1"><br> -->
@@ -36,16 +36,16 @@
          <!-- <input type="radio" name="ita"><img src="/public/ita3.png" alt="ita3" title="ita3"><br> -->
       <!-- <input type="radio" name="ita"><img src="/public/ita4.png" alt="ita4" title="ita4"><br> -->
 
-      <input type="radio" name="ita" value="ita1" id="ita1" checked><label for="sizeSelectita1"></label>
-      <input type="radio" name="ita" value="ita2" id="ita2" checked><label for="sizeSelectita2"></label>
-      <input type="radio" name="ita" value="ita3" id="ita3" checked><label for="sizeSelectita3"></label>
-      <input type="radio" name="ita" value="ita4" id="ita4" checked><label for="sizeSelectita4"></label>
+      <input type="radio" name="ita" value="ita1" id="sizeSelectita1" checked><label for="sizeSelectita1"></label>
+      <input type="radio" name="ita" value="ita2" id="sizeSelectita2" checked><label for="sizeSelectita2"></label>
+      <input type="radio" name="ita" value="ita3" id="sizeSelectita3" checked><label for="sizeSelectita3"></label>
+      <input type="radio" name="ita" value="ita4" id="sizeSelectita4" checked><label for="sizeSelectita4"></label>
     </form>
 
       <p>表示サンプル</p>
       <canvas id="canvas"></canvas>
       <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
+        <input type="text" maxlength="10" placeholder="Dreams!">
         <button type="submit">PINGで保存</button>
         <a onclick="downloadImg()" id="download" class="btn btn-primary">画像ダウンロード</a>
 
