@@ -43,6 +43,7 @@
 //  }); 
  
 
+
 //表示サンプル
 let canvas = document.getElementById('canvas');
 let cv = canvas.getContext('2d');
@@ -93,7 +94,6 @@ let context = canvas.getContext("2d");
 } */
 
 {/* <canvas id="canvas"></canvas> */}
-
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const image = new Image();
@@ -110,7 +110,7 @@ image.addEventListener("load", ()=>{
 });
 
 //画像ダウンロード
-function downloadImg(){
+function downloadImg(canvas){
 	const url = './imgs/img.png';
 	const fileName = 'img.png';
 	
