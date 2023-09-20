@@ -51,7 +51,7 @@ let cv = canvas.getContext('2d');
 //background color
 //cv.beginPath();
 function bg(){
-	cv.fillStyle = 'rgb(255, 0, 0)';
+	cv.fillStyle = 'ita1.png';
 	cv.fillRect(0, 0, canvas.width, canvas.height);
 	return true
 }
@@ -74,7 +74,7 @@ function inputChange(){
 	cv.font = '50px Roboto medium';
 	cv.strokeText(val, 100, 100)
 
-	touka(255,0,0)
+	//touka(255,0,0)
 }
 
 //PNG透過画像作成
@@ -93,11 +93,12 @@ let context = canvas.getContext("2d");
   return;
 } */
 
-{/* <canvas id="canvas"></canvas> */}
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
+
+
+// const canvas = document.getElementById('canvas');
+// const ctx = canvas.getContext('2d');
 const image = new Image();
-image.src = "ita1.png";
+value = "ita1.png";
 
 image.addEventListener("load", ()=>{
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
@@ -109,12 +110,30 @@ image.addEventListener("load", ()=>{
 
 });
 
+//ラジオボタンを押したらイベント
+function check_form() {
+  var value = document.sample_form.sex;
+
+  for(i=0; i<value.length; i++) {
+    if(value[i].checked) {
+      console.log(value[i].value);
+    }
+  }
+}
+
 //画像ダウンロード
-function downloadImg(canvas){
-	const url = './imgs/img.png';
-	const fileName = 'img.png';
-	
-	let link = document.getElementById("download");
-	link.href= url;
-	link.download = fileName;
+function downloadImg () {
+  const fileName = 'file.png';
+  const uri = '/path/img/file.png';
+
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', uri);
+  xhr.responseType = 'blob';
+  xhr.onloadend = () => {
+      if (xhr.status !== 200) {
+          return false;
+      }
+      window.navigator.msSaveOrOpenBlob(xhr.response, fileName);
+  };
+  xhr.send();
 }
