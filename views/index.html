@@ -36,10 +36,10 @@
          <!-- <input type="radio" name="ita"><img src="/public/ita3.png" alt="ita3" title="ita3"><br> -->
       <!-- <input type="radio" name="ita"><img src="/public/ita4.png" alt="ita4" title="ita4"><br> -->
         <div id="sizeSelectita">
-      <input type="radio" name="ita" value="ita1" id="sizeSelectita1" checked><label for="sizeSelectita1"></label>
-      <input type="radio" name="ita" value="ita2" id="sizeSelectita2" checked><label for="sizeSelectita2"></label>
-      <input type="radio" name="ita" value="ita3" id="sizeSelectita3" checked><label for="sizeSelectita3"></label>
-      <input type="radio" name="ita" value="ita4" id="sizeSelectita4" checked><label for="sizeSelectita4"></label>
+      <input type="radio" name="ita" value="ita1" id="sizeSelectita1" onchange="func1()" checked><label for="sizeSelectita1"></label>
+      <input type="radio" name="ita" value="ita2" id="sizeSelectita2" onchange="func1()"><label for="sizeSelectita2"></label>
+      <input type="radio" name="ita" value="ita3" id="sizeSelectita3" onchange="func1()"><label for="sizeSelectita3"></label>
+      <input type="radio" name="ita" value="ita4" id="sizeSelectita4" onchange="func1()"><label for="sizeSelectita4"></label>
     </div>
     </form>
 
@@ -48,7 +48,7 @@
       <form>
         <!-- <input type="text" maxlength="10" placeholder="Dreams!"> -->
         <button type="submit">PINGで保存</button>
-        <a onclick="downloadImg();" id="download" class="btn btn-primary">画像ダウンロード</a>
+        <!-- <a onclick="downloadImg();" id="download" class="btn btn-primary">画像ダウンロード</a> -->
      
       </form>
       <!-- <section class="dreams">
