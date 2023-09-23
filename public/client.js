@@ -37,9 +37,10 @@ function setimage(image) {
   
   cv.globalCompositeOperation = "destination-in";
   cv.fillStyle = 'rgb(0, 0, 0, 1)';
-  cv.font = "50px Roboto";
+  // cv.font = "50px Roboto";
+  cv.font = "bold 50px 'HGP創英角ﾎﾟｯﾌﾟ体', serif";
   cv.fillText(reviewArea.value, 10 , 50 );  
-  
+
 }
 
 

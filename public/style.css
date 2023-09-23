@@ -48,6 +48,12 @@ input {
   font-size: 16px;
 }  
 
+canvas {
+  
+  height: 80px;
+  width: 285px;
+}
+
 button {
   font-size: 16px;
   border-radius: 3px;
@@ -55,6 +61,8 @@ button {
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
   cursor: pointer;
+ top: 10%;
+
 }
 
 button:hover {
