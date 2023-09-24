@@ -26,16 +26,15 @@ p {
   max-width: 600px;
 }
 
-/form {
+form {
   margin-bottom: 25px;
   padding: 15px;
-  background-color: cyan;
-  /* display: inline-block; */
+  /* background-color: cyan;*/
+  display: inline-block; 
   width: 100%;
   max-width: 340px;
   border-radius: 3px;
   display: flex;
-
 } 
 
 input {
@@ -51,7 +50,7 @@ input {
 canvas {
   
   height: 80px;
-  width: 285px;
+  width: 500px;
 }
 
 button {
@@ -61,7 +60,7 @@ button {
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
   cursor: pointer;
- top: 10%;
+  top: 10%;
 
 }
 
