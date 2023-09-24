@@ -60,8 +60,8 @@ button {
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
   cursor: pointer;
-  top: 10%;
-
+  display: flex;
+  justify-content:left;
 }
 
 button:hover {
