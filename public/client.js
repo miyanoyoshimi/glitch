@@ -39,7 +39,7 @@ function setimage(image) {
   cv.fillStyle = 'rgb(0, 0, 0, 1)';
   // cv.font = "50px Roboto";
   cv.font = "bold 50px 'HGP創英角ﾎﾟｯﾌﾟ体', serif";
-  cv.fillText(reviewArea.value, 10 , 50 );  
+  cv.fillText(reviewArea.value, 10 , 50 , 700 );  
 
 }
 
